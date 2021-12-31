@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap-grid.min.css" />
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="color-switcher">
+
+        <div class="color-switcher-btn">
+            <i class="fas fa-cog"></i>
+        </div>
+
+        <h3>select color</h3>
+
+        <div class="theme-buttons-container">
+            <span class="theme-buttons" data-colors="#8e44ad" style="background:#8e44ad"> </span>
+            <span class="theme-buttons" data-colors="#2980b9" style="background:#2980b9"> </span>
+            <span class="theme-buttons" data-colors="#f39c12" style="background:#f39c12"> </span>
+            <span class="theme-buttons" data-colors="#e74cec" style="background:#e74cec"> </span>
+            <span class="theme-buttons" data-colors="#27ae60" style="background:#27ae60"> </span>
+            <span class="theme-buttons" data-colors="#e84393" style="background:#e84393"> </span>
+            <span class="theme-buttons" data-colors="#ff4757" style="background:#ff4757"> </span>
+            <span class="theme-buttons" data-colors="#ffc312" style="background:#ffc312"> </span>
+            <span class="theme-buttons" data-colors="#17c0eb" style="background:#17c0eb"> </span>
+        </div>
+    </div>
+
+    <main class="main">
+        <header id="header">
+
+            <img src="https://letyshops.com/build/core/images/logo.6d3a4762db7e7f8aad55.svg" alt="" class="logo" />
+
+            <div class="search-bar">
+                <input type="text" class="search-bar-inner" placeholder="Search store" />
+                <i class="far fa-search"></i>
+            </div>
+
+            <a class="extension-btn">
+                <img alt="Install extension" class="mr-2"
+                    src="https://static.letyshops.com/sites/default/files/external_static/for-extension/chrome.svg" />
+                Install Extension
+            </a>
+
+            <div class="flag-select">
+                <img class="mr-2"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAmVBMVEX/mTMSiAf/////lycAgQAAAIgAAIUAAH4AAIIAAIMAAHwAAHPi4u+kpMvz8/kAAHjn5/Lt7fXd3ey5uddPT6GZmcWDg7n6+v7Ly+HIyOJERJxlZao+PponJ5L29vy0tNbW1uggIJCfn8iGhrsYGJBNTaB2drQQEIx+fripqc5ra62QkMBXV6QiIpFfX6i+vtwyMpw6Opg1NZe0gadDAAAEvUlEQVR4nO3ba3OiSBiG4UzvdDcip8YDiAdQZAIxExP//4/btzHjZH1Nze6HpVPlc1Ul0eiH9g7Q2JKHBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA/+gvuPYg4BqacGjCoQmHJhyacF+hSTI5LFd7uV8tD5PE9WDEF2gSHNbaGyklpVRq5Omfh8D1kBw3qaZ6pCiGVFrr/oYc6SZ3OyinTZIpdZCeevnhNyY1jf/jRXm0vejG6S7kssnObhmeNxMbcTSiEuZIt2aeZ7eancNxOWzy7NFrn3cnI/p9pbTfcmFO3ZxaeVN3A3PWJNrS5lAEmb3d5wgvt7KgoMe2kauhuWoSPdK2QHvIwt5ZpPTtQF/p+S7tVbQNPbqK4qhJRluJ17VGZB3di2yPF/o62AxdJkzbUZRt5mZwjpo0lOTY3wrtFGMPHq/vP5N+JxJHiuLomOKmycyTXinOUewLX1IYSTmW7/cpiSjpOTMno3PSJNA049TnQ4gIae8J6cVrSkWbSNdvJvRITbOPdnJO66RJo1QzM3RjaY8YMhLVVmR+JraViGhzEZn9vZnZp7kYnosmCy31+UR180oH1a4QWWyiODJxJhqajaPTpn80oee5OM130WSlVL3pZ11hJO0daiLWITUJ12KiaM+Spn9ssamVKhyMz0GTVNsDrOi6/o5fiVKLdmVis2qFLkXl27OV/rhCh1mdDj9AB01qmoftnz+Z2ir5+Cjk08JP49RfPElxHNvdpZvao2vhyVE9/AAdNHmkOfZ8ihpK2l4m4y4fJ7ryKp2M8248oe1D7vrHDc3Z++EHOHwTmojlr9tRISciHB/beZ3v87puj+OdmMiV+fUE6WI6Hr5J6amnaFEuzptK6av8GAfrKmzDah3Ex/zR798Iik1e5tGT8srBRzh8k7lSLf1ID9NlWNF5yHLcBuugLd6KNl0H87E9N0m7p+Zgj66tUvPBRzh8k2cl/fNZRzLbxut2kczXaWFXIEdFsG6TfH6KH2fnPSb3pXoefITDN3lVanpZBTDhytd12o6kNWrTg/ZPu8vKYzRV6nXwEQ7fRErvkiSLIpNWeViovokqdnmVmii6LBJE3u8D8mCcNEmqYzhbnqT2/TiOvX37Js/e6q1Hv4l9LX8+H8IyT++mCbaTK1fHkzccTz7OO8Hveafp550mWM/vct6Zn085cH7ywe3z2JTOY9O7PY/F+50b9vS++PyiP3tfPLm398WiHv15/aTs109Wd7N+gnW2G4p/uR6b3c96rMiv1u2bT9btgztat+8/3zmY989xbn6+I+7t8x18DngLPi++YYrrChhcf3IDrlO6IdqOpCpSXM/2D/11j234yXWPwy+bXOD6WO5rXkc9vdvrqAWut78N/5dx08f/3zF/fvr/7is0+WrQhEMTDk04NOHQhHv4DtcevsE1NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMTDk04NOHQhEMT7m/cNifkUwM0UQAAAABJRU5ErkJggg=="
+                    alt="">
+                India
+                <i class="fa fa-chevron-down ml-2"></i>
+            </div>
+            <div class="action-btn-outer">
+                <a href="#" class="action-btn login-action">Login</a>
+                <a href="#" class="action-btn join-action">Join</a>
+            </div>
+        </header>
+
+        <section id="sub-header">
+            <ul>
+                <li><i class="far fa-list-ul"></i></li>
+                <li><a href="#"><strong>All Categories</strong></a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Home appliences</a></li>
+                <li><a href="#">Clothing & Shoes</a></li>
+                <li><a href="#">Health & Beauty</a></li>
+                <li><a href="#">Home, Garden & Decorations</a></li>
+                <li><a href="#">Toys, Kids & Baby</a></li>
+                <li><a href="#">Sport </a></li>
+                <li><a href="#">Automotive</a></li>
+                <li><a href="#">Pet Supplies</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#" class="refer-btn">Refer and Earn</a></li>
+            </ul>
+        </section>
+        <section id="landing-hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 column content">
+                        <h1>HELLO</h1>
+                        <h2>It's time to make money while shopping!</h2>
+                        <div>
+                            <p><strong>Cashback</strong> is the new trend in online shopping.</p>
+                            <p>
+                                Order products and services at your favorite online stores. Get up to 30% cashback to
+                                your Paypal account
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 column signup-outer">
+                        <div class="signup">
+                            <h3>Start saving right now</h3>
+
+                            <div class="signup-smedia">
+                                <p class="text-grey">Register with your social media account</p>
+                                <a href="#" class="smedia-fb"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="smedia-gg"><i class="fab fa-google"></i></a>
+                            </div>
+
+                            <form class="signup-form">
+                                <p class="text-grey">or using email</p>
+                                <input type="text" placeholder="Enter your email" />
+                                <input type="text" placeholder="Create a password" />
+                                <input type="submit" value="Join" class="w-100">
+                            </form>
+                            <p class="policy-notic">By registering, you consent to our <a href="#"> Terms of use</a> and
+                                <a href="#">Privacy policy</a> </p>
+                            <p class="login-referance">
+                                Do you have an account? <a href="#">Login</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <svg height="250" width="1000" class="absolute-triangle ">
+                <polygon points="1000,0 1000,250 0,250" fill="var(--main-color)"></polygon>
+            </svg>
+        </section>
+        <section id="other">
+            <h1>Other Section</h1>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./style.js"></script>
+</body>
+
+</html>

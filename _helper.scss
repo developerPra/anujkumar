@@ -1,0 +1,29 @@
+// reseting css
+ul,
+li,
+p,
+div,
+span {
+    cursor: default;
+}
+
+// utils
+.text-grey {
+    color: #a0a0a0;
+    font-size: 14px;
+    margin-top: 1.5rem;
+}
+
+// mixins
+@mixin flexBox($jc, $ai) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+// keyframes
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
